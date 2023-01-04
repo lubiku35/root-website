@@ -17,16 +17,16 @@
     <!--===== LANDING PAGE SECTION =====-->
     <section id="landing-page" class="project-container">
         <nav>
+            <h2 id="author-name">luboslav motosicky</h2>
             <ul id="landing-navigation">
-                <li><a href="#whoami">whoami</a></li>
                 <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
+                <li><a href="#whoami">whoami</a></li>
+                <li><a href="#contact">contact</a></li> 
             </ul>
+            <img src="./assets/themes/moon.png" id="theme-changer" alt="theme changer image" width="25px" height="25px">
         </nav>
         <header>
-            <img src="./assets/themes/moon.png" id="theme-changer" alt="theme changer image" width="25px" height="25px">
             <h1 id="project-name">lubik<span id="handler-letter-spacing">u</span><span id="red-dot">.</span></h1>
-            <h2 id="author-name">luboslav motosicky</h2>
         </header>
         <footer class="landing-footer">
             <p id="year">\\ 2023</p>
@@ -46,7 +46,7 @@
                 <p id="about-author-text"><a href="https://www.dictionary.com/e/word-of-the-day/selcouth-2022-10-23/">selcouth</a> type of person, currently on level 21. studying software engineering and information technologies. located in prague - czech republic, also working as junior it security expert. involved in programming & scripting, cybersecurity & hacking, design & art, fitness & bodybuilding and more...</p>
                 <footer id="about-author-footer">
                     <a href="">discover more</a>
-                    <a href="">open projects</a>
+                    <a href="#projects">open projects</a>
                 </footer>
             </section>
         </main>
@@ -108,29 +108,36 @@
                 </a>
                 <p>Lorem ipsum dolor sit amet.</p>
             </li>
-            <li class="project-container" id="project-studiolubiku">
+            <li class="project-container" id="project-cyberlubiku">
                 <p class="project-tag">[003]</p>
+                <a href="">
+                    <h3>blog - metanoia</h3>
+                </a>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </li>
+            <li class="project-container" id="project-studiolubiku">
+                <p class="project-tag">[004]</p>
                 <a href="">
                     <h3>studiolubiku</h3>
                 </a>
                 <p>Lorem ipsum dolor sit amet.</p>
             </li>
             <li class="project-container" id="project-whoislubiku">
-                <p class="project-tag">[004]</p>
+                <p class="project-tag">[005]</p>
                 <a href="">
                     <h3>whoislubiku</h3>
                 </a>
                 <p>Lorem ipsum dolor sit amet.</p>
             </li>
             <li class="project-container" id="project-adrenaline">
-                <p class="project-tag">[005]</p>
+                <p class="project-tag">[006]</p>
                 <a href="">
                     <h3>project adrenaline C<sub>9</sub>H<sub>13</sub>NO<sub>3</sub></h3>
                 </a>
                 <p>Lorem ipsum dolor sit amet.</p>
             </li>
             <li class="project-container" id="project-cvutness">
-                <p class="project-tag">[006]</p>
+                <p class="project-tag">[007]</p>
                 <a href="">
                     <h3>project cvutness <span class="school-project">{school project}</span></h3>
                 </a>
@@ -143,6 +150,29 @@
     <!--===== CONTACT SECTION =====-->
     <section id="contact">
         <h2>stay in touch</h2>
+        <form action="">
+            <div class="row">
+                <p>
+                    <label for="">name</label>
+                    <input type="text" value="" required>
+                </p>
+                <p>
+                    <label for="">email</label>
+                    <input type="email" value="" required>
+                </p>
+            </div>
+            <p id="subject">
+                <label for="">subject</label>
+                <input type="text" value="" required>
+            </p>
+            <p id="message">
+                <label for="">message</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </p>
+            <p id="submit-p">
+                <button type="submit" id="submit">submit</button>
+            </p>
+        </form>
     </section>
     
     

@@ -56,8 +56,11 @@
 
 #whoami #main-content #about-author-content #about-author-text {
     padding-bottom: 25px;
-
     max-width: 80%;
+
+    line-height: 1.3em;
+    letter-spacing: .1em;
+    font-weight: 500;
 }
 
 #whoami #main-content #about-author-content #about-author-text a {
@@ -77,6 +80,9 @@
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color);
     background-color: var(--primary-color);
+
+    letter-spacing: .05em;
+    font-weight: 500;
 
     transition: all .4s ease-in-out;
 }

@@ -1,5 +1,5 @@
 #projects {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     height: 100vh;
 
     display: flex;
@@ -31,10 +31,15 @@
 #projects #projects-menu .project-container a {
     color: var(--secondary-color);
     opacity: .9;
+    letter-spacing: .1em;
     transition: all .2s ease-in-out;
 }
 
 #projects #projects-menu .project-container a:hover, #projects #projects-menu .project-container a:focus {
     opacity: .9;
     text-decoration: line-through;
+}
+
+.school-project {
+    font-size: .8em;
 }

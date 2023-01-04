@@ -8,40 +8,54 @@
     <meta name="description" content="Official root website of Lubiku"/>
     
     <!-- Cascading Style Sheets -->    
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./styles/main.css">
 
 
     <title>LUBIKU</title>
 </head>
 <body>
     <!--===== LANDING PAGE SECTION =====-->
-    <section id="landing-page">
+    <section id="landing-page" class="project-container">
         <nav>
-            <ul>
-                <li><a href="">whoami</a></li>
-                <li><a href="">projects</a></li>
-                <li><a href="">contact</a></li>
+            <ul id="landing-navigation">
+                <li><a href="#whoami">whoami</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
         <header>
-            <button id="change-project-theme">change theme</button>
-            <h1>lubiku<span id="red-dot">.</span></h1>
-            <h2>luboslav motosicky</h2>
+            <img src="./assets/themes/moon.png" id="theme-changer" alt="theme changer image" width="25px" height="25px">
+            <h1 id="project-name">lubik<span id="handler-letter-spacing">u</span><span id="red-dot">.</span></h1>
+            <h2 id="author-name">luboslav motosicky</h2>
         </header>
-        <div class="landing-footer">
-
-        </div>
+        <footer class="landing-footer">
+            <p id="year">\\ 2023</p>
+            <a href="#whoami"><img id="continue-arrow" src="./assets/imgs/black_arrow.png" alt="arrow image with link to next section" width="25px" height="25px"></a>
+            <p id="version">v1.3</p>
+        </footer>
     </section>
 
     <!--===== WHOAMI SECTION =====-->
     <section id="whoami">
-
+        <h2>whoami</h2>
+        <main id="main-content">
+            <img src="./assets/imgs/author.png" width="500px" height="500px" alt="photo of the author - lubiku">
+            <section id="about-author-content">
+                <p id="lines-content">\ \ \ \ \</p>
+                <h3 id="about-author-heading">luboslav motosicky alias "lubiku"</h3>
+                <p id="about-author-text"><a href="https://www.dictionary.com/e/word-of-the-day/selcouth-2022-10-23/">selcouth</a> type of person, currently on level 21. studying software engineering and information technologies. located in prague - czech republic, also working as junior it security expert. involved in programming & scripting, cybersecurity & hacking, design & art, fitness & bodybuilding and more...</p>
+                <footer id="about-author-footer">
+                    <a href="">discover more</a>
+                    <a href="">open projects</a>
+                </footer>
+            </section>
+        </main>
     </section>
 
     
     <!--===== SOCIALS SECTION =====-->
     <section id="socials">
-
+        <a href=""><img src="./assets/socials/dark/" alt=""></a>
     </section>
 
     <!--===== PROJECTS SECTION =====-->
@@ -58,10 +72,11 @@
     
     <!--===== FOOTER SECTION =====-->
     <section id="footer">
-        
+
     </section>
 
 
     <!--===== SCRIPTS =====-->
+    <script src="./scripts/theme-changer.js"></script>
 </body>
 </html>

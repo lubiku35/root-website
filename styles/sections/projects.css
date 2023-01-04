@@ -1,0 +1,40 @@
+#projects {
+    padding: 100px 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#projects h2 {
+    letter-spacing: .35em;
+    font-weight: 500;
+    text-indent: -.35em;
+}
+
+#projects #projects-menu {
+    padding: 50px 0;
+    height: 80%;
+    width: 80%;
+    max-width: 1440px;
+
+}
+
+#projects #projects-menu .project-container {
+    padding: 5px 0 15px 0 ; 
+    border-top: 1px solid var(--secondary-color);
+}
+
+
+#projects #projects-menu .project-container a {
+    color: var(--secondary-color);
+    opacity: .9;
+    transition: all .2s ease-in-out;
+}
+
+#projects #projects-menu .project-container a:hover, #projects #projects-menu .project-container a:focus {
+    opacity: .9;
+    text-decoration: line-through;
+}

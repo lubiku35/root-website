@@ -1,0 +1,143 @@
+/*====== PROJECT FONTS ======*/
+
+/* === ORBITRON === */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+/* === RAJDHANI === */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+
+/*====== MAIN - SECTIONS CASCADING STYLE SHEETS ======*/
+@import url(./sections/header/header.css);
+@import url(./sections/footer/footer.css);
+
+@import url(./sections/home-landing/home-landing.css);
+@import url(./sections/blog-landing/blog-landing.css);
+@import url(./sections/whoami/whoami.css);
+@import url(./sections/projects/projects.css);
+
+:root {
+    /*=== PROJECT COLORS ===*/ 
+    --primary-color: #EEEDEF;
+    --secondary-color: #191A19;
+
+    --red-enchanted: #DE2B2D;
+    --red-enchanted-low-opacity: rgba(222, 43, 45, 0.5);
+
+    /*=== PROJECT FONTS ===*/ 
+    --orbitron: 'Orbitron', sans-serif;
+    --rajdhani: 'Rajdhani', sans-serif;
+}
+
+.dark-theme {
+    --primary-color: #191A19;
+    --secondary-color: #EEEDEF;
+}
+
+.bolder {
+    font-weight: 700;
+}
+
+.handler-letter-spacing {
+    letter-spacing: normal;
+}
+
+.landing-container {
+    padding: 280px 0 50px 0;
+    margin: 0 auto;
+    height: 90vh;
+    width: 100vw;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-footer {
+    margin: 0 auto;
+
+    width: 100%;
+    padding: 0 15px;
+    max-width: 1440px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing-footer p {
+    letter-spacing: .1em;
+    font-weight: 500;
+    font-size: 1.05em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--rajdhani);
+    
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 320px;
+
+    background-color:  var(--primary-color);
+    color:  var(--secondary-color);
+
+    overflow: hidden;
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+h1 {
+    font-family: var(--orbitron);
+}
+
+h1, h2, h3, h4, p, a {
+    text-transform: uppercase;
+}
+
+h2 {
+    letter-spacing: .35em;
+    font-weight: 500;
+    text-indent: -.35em;
+}
+
+main {
+    display: block;
+}
+
+@media screen and (max-width: 700px) {
+    .landing-container {
+        padding: 0;
+        justify-content: space-around;
+
+        height: 85vh;
+    }
+
+    .landing-footer {
+        width: 80%;
+        padding: 0;
+
+        overflow: hidden;
+    }
+    
+}
+

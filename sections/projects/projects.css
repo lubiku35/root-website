@@ -1,5 +1,5 @@
 #projects {
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     height: 100vh;
 
     display: flex;
@@ -37,6 +37,10 @@
 #projects-menu .project-container a:hover {
     background-position: 100% 100%; /*OR bottom right*/
     background-size: 100% 1px;
+}
+
+#projects-menu .project-container p {
+    padding-top: 5px;
 }
 
 .school-project {

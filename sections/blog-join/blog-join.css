@@ -1,0 +1,105 @@
+.join-blog-container {
+    height: 90vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.join-blog-container  h1 {
+    width: max-content;
+    margin-bottom: 25px;
+
+
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 3em;
+    letter-spacing: .15em; 
+    font-weight: 500;
+}
+
+.join-blog-container form {
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.join-blog-container form label {
+    margin: 0 auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.join-blog-container form label p {
+    margin: 0 auto;
+    margin-bottom: 8px;
+    align-self: flex-start;
+    width: 35%;
+}
+
+.join-blog-container form label input {
+    width: 35%;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+
+    color: var(--secondary-color);
+    font-family: var(--rajdhani);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+
+
+}
+
+.join-blog-container form  .btn-join {
+    padding: 8px 14px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    
+    cursor: pointer;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+
+    transition: all .4s ease-in-out;
+}
+
+.join-blog-container form  .btn-join:focus, .join-blog-container form  .btn-join:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.join-footer-text {
+    font-size: .9em;
+}
+
+.join-footer-text a {
+    font-weight: 700;
+
+    padding-bottom: 1px;
+    background-image: linear-gradient(var(--secondary-color) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.5s;
+}
+
+.join-footer-text a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 1px;
+}

@@ -21,46 +21,42 @@
         <h3 id='where-to-find-me'>where to find me?</h3>
         <section id='social-links-wrapper'>
             <div class="socials-wrapper-first">
-                <a href="">
-                    <img src="./assets/socials/dark/linkedin.svg" alt="https://www.linkedin.com/in/whoislubiku/"
+                <a href="https://www.linkedin.com/in/whoislubiku/">
+                    <img src="./assets/socials/dark/linkedin.svg" alt="lubiku linkedin profile link"
                         id="socials-linkedin">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/twitter.svg" alt="https://twitter.com/whoislubiku"
-                        id="socials-twitter">
+                <a href="https://twitter.com/whoislubiku">
+                    <img src="./assets/socials/dark/twitter.svg" alt="lubiku twitter profile link" id="socials-twitter">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/instagram.svg" alt="https://www.instagram.com/lubiku35/"
+                <a href="https://www.instagram.com/lubiku35/">
+                    <img src="./assets/socials/dark/instagram.svg" alt="lubiku instagram profile link"
                         id="socials-instagram">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/github.svg" alt="https://github.com/lubiku35" id="socials-github">
+                <a href="https://github.com/lubiku35">
+                    <img src="./assets/socials/dark/github.svg" alt="lubiku github profile link" id="socials-github">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/codewars.svg" alt="https://www.codewars.com/users/whoislubiku"
+                <a href="https://www.codewars.com/users/whoislubiku">
+                    <img src="./assets/socials/dark/codewars.svg" alt="lubiku codewars profile link"
                         id="socials-codewars">
                 </a>
             </div>
             <div class="socials-wrapper-second">
-                <a href="">
-                    <img src="./assets/socials/dark/behance.svg" alt="https://www.behance.net/bylubiku"
-                        id="socials-behance">
+                <a href="https://www.behance.net/bylubiku">
+                    <img src="./assets/socials/dark/behance.svg" alt="lubiku behance profile link" id="socials-behance">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/dribbble.svg" alt="https://dribbble.com/lubiku"
+                <a href="https://dribbble.com/lubiku">
+                    <img src="./assets/socials/dark/dribbble.svg" alt="lubiku dribbble profile link"
                         id="socials-dribbble">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/soundcloud.svg" alt="https://soundcloud.com/lubo-moto-ick"
+                <a href="https://soundcloud.com/lubo-moto-ick">
+                    <img src="./assets/socials/dark/soundcloud.svg" alt="lubiku soundcloud profile link"
                         id="socials-soundcloud">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/twitch.svg" alt="https://www.twitch.tv/whoislubiku"
-                        id="socials-twitch">
+                <a href="https://www.twitch.tv/whoislubiku">
+                    <img src="./assets/socials/dark/twitch.svg" alt="lubiku twitch profile link" id="socials-twitch">
                 </a>
-                <a href="">
-                    <img src="./assets/socials/dark/youtube.svg"
-                        alt="https://www.youtube.com/channel/UCiwUj6DcYCPGhAi3sv2uTlQ" id="socials-youtube">
+                <a href="https://www.youtube.com/channel/UCiwUj6DcYCPGhAi3sv2uTlQ">
+                    <img src="./assets/socials/dark/youtube.svg" alt="lubiku youtube channel link" id="socials-youtube">
                 </a>
             </div>
         </section>

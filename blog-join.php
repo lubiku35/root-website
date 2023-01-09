@@ -22,17 +22,28 @@
     <main id='blog-join-landing' class='join-blog-container'>
         <h1>LOGIN</h1>
 
-        <form action="" method="post">
+        <form action="./includes/login.inc.php" method="post">
             <label for="username">
-                <p>USERNAME:</p>
+                <p>USERNAME / EMAIL:</p>
                 <input type="text" name="username" placeholder="username">
             </label>
-            <label for="password">
+            <label for="pwd">
                 <p>PASSWORD:</p>
-                <input type="password" name="password" id="password" placeholder="password">
+                <input type="password" name="pwd" id="pwd" placeholder="password">
             </label>
             <button type="submit" name="submit" class='btn-join'>LOG IN</button>
         </form>
+
+        <!--===== SERVER ERROR HANDLERS SECTION =====-->
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                echo "<p class='server-error-msg'>Please fill in all fields!</p>";
+            } elseif ($_GET["error"] == "wronglogin") {
+                echo "<p class='server-error-msg'>Incorrect login!</p>";
+            }
+        }
+        ?>
 
         <p class='join-footer-text'>Don't have an account? then please <a href="./blog-new-account.php">register
                 here</a>.</p>

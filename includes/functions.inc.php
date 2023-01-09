@@ -41,7 +41,7 @@ function pwdRight($pwd)
     $numbers = preg_match("@[0-9]@", $pwd);
     $specialchars = preg_match("@[^\w]@", $pwd);
 
-    if (!$uppercase || !$lowercase || !$numbers || !$specialchars || strlen($pwd) < 8) {
+    if (!$uppercase || !$lowercase || !$numbers || !$specialchars || strlen($pwd) < 7) {
         $output = true;
     } else {
         $output = false;
@@ -101,4 +101,39 @@ function createUser($conn, $name, $username, $email, $pwd)
     mysqli_stmt_close($stmt);
     header("location: ..../blog-new-account.php?error=none");
     exit();
+}
+
+function emptyInputLogin($username, $pwd)
+{
+    $output = '';
+    if (empty($username) || empty($pwd)) {
+        $output = true;
+    } else {
+        $output = false;
+    }
+    return $output;
+}
+
+function loginUser($conn, $username, $pwd)
+{
+    $uid_exists = uidExists($conn, $username, $username);
+
+    if ($uid_exists === false) {
+        header("location: ../blog-join.php?error=wronglogin");
+        exit();
+    }
+
+    $pwdhashed = $uid_exists["usersPwd"];
+
+    $checkpwd = password_verify($pwd, $pwdhashed);
+
+    if ($checkpwd === false) {
+        header("location: ../blog-join.php?error=wronglogin");
+        exit();
+    } else if ($checkpwd === true) {
+        session_start();
+        $_SESSION["userid"] = $uid_exists["usersId"];
+        $_SESSION["useruid"] = $uid_exists["usersUid"];
+        header("location: ../blog.php");
+    }
 }

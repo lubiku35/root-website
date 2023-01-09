@@ -46,11 +46,31 @@
             <button type="submit" name="submit" class='btn-join'>REGISTER</button>
         </form>
 
+        <!--===== SERVER ERROR HANDLERS SECTION =====-->
+        <?php
+        if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyinput") {
+                echo "<p class='server-error-msg'>Please fill in all fields!</p>";
+            } elseif ($_GET["error"] == "invaliduid") {
+                echo "<p class='server-error-msg'>Please check your username, it contains not valid characters!</p>";
+            } elseif ($_GET["error"] == "invalidemail") {
+                echo "<p class='server-error-msg'>Please check your email, this email seems to be not valid!</p>";
+            } elseif ($_GET["error"] == "pwdnotrighttoconditions") {
+                echo "<p class='server-error-msg'>Your password is not valid, password must contains at least one special character, one lowerace letter, one uppercase letter and must be at least 8 characters long!</p>";
+            } elseif ($_GET["error"] == "notmachtingpwds") {
+                echo "<p class='server-error-msg'>Passwords are not matching!</p>";
+            } elseif ($_GET["error"] == "takenusername") {
+                echo "<p class='server-error-msg'>This username or email has been taken!</p>";
+            } elseif ($_GET["error"] == "stmtfailed") {
+                echo "<p class='server-error-msg'>Ooops, something went wrong, plese try it again!</p>";
+            } elseif ($_GET["error"] == "none") {
+                echo "<p class='server-right-msg'>You have been signed up!</p>";
+            }
+        }
+        ?>
+
         <p class='join-footer-text'>Already have an account? <a href="./blog-join.php">login here</a>.</p>
     </main>
-
-    <!--===== ERROR SECTION =====-->
-
 
     <!--===== FOOTER SECTION =====-->
     <?php

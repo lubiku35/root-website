@@ -1,0 +1,124 @@
+#contact {
+    padding: 75px 0;
+
+    width: 100%;
+    height: 90vh;
+
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h1 {
+    width: max-content;
+    margin-bottom: 25px;
+
+
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 3em;
+    letter-spacing: .15em; 
+    font-weight: 500;
+}
+
+#contact form {
+    width: 1200px;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    justify-content: center;
+}
+
+#contact form .row {
+    width: 60%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+#contact form p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+#contact form p input {
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+    background: transparent;
+    border-bottom: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    font-family: var(--rajdhani);
+
+
+    min-width: 100px;
+    width: 250px;
+}
+
+#subject {
+    margin: 0 auto;
+    width: 60%;
+    align-self: flex-start;
+}
+
+#message {
+    margin: 0 auto;
+    width: 60%;
+    align-self: flex-start;
+}
+
+#message textarea{
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    outline: none;
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-family: var(--rajdhani);
+}
+
+#submit {
+    margin-top: 15px;
+    padding: 10px 22px;
+
+    outline: none;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    background: var(--primary-color);
+
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all .4s ease-in-out;
+}
+
+#submit-p {
+    margin: 0 auto;
+    width: 60%;
+    align-self: flex-start;
+}
+
+#submit:hover, #submit:focus {
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+} 

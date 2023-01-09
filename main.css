@@ -23,6 +23,9 @@
 /*====== JOIN BLOG SECTIONS CASCADING STYLE SHEETS ======*/
 @import url(./sections/blog-join/blog-join.css);
 
+/*====== CONTACT CASCADING STYLE SHEETS ======*/
+@import url(./sections/contact/contact.css);
+
 
 :root {
     /*=== PROJECT COLORS ===*/ 

@@ -21,28 +21,28 @@
 
     <!--===== CONTACT SECTION =====-->
     <section id="contact">
-        <h2>stay in touch</h2>
+        <h1>stay in touch</h1>
         <form action="">
             <div class="row">
                 <p>
-                    <label for="">name</label>
-                    <input type="text" value="" required>
+                    <label for="name">name</label>
+                    <input type="text" name="name" value="" required>
                 </p>
                 <p>
-                    <label for="">email</label>
-                    <input type="email" value="" required>
+                    <label for="email">email</label>
+                    <input type="email" name="email" value="" required>
                 </p>
             </div>
             <p id="subject">
-                <label for="">subject</label>
-                <input type="text" value="" required>
+                <label for="subject">subject</label>
+                <input type="text" name="subject" value="" required>
             </p>
             <p id="message">
-                <label for="">message</label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <label for="message">message</label>
+                <textarea name="message" id="" cols="30" rows="10"></textarea>
             </p>
             <p id="submit-p">
-                <button type="submit" id="submit">submit</button>
+                <button type="submit" name="submit" id="submit">submit</button>
             </p>
         </form>
     </section>

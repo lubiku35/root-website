@@ -49,9 +49,6 @@
                 here</a>.</p>
     </main>
 
-    <!--===== ERROR SECTION =====-->
-
-
     <!--===== FOOTER SECTION =====-->
     <?php
     include_once './sections/footer/footer.php'

@@ -41,6 +41,9 @@
     --rajdhani: 'Rajdhani', sans-serif;
 }
 
+
+/*=== GLOBAL PROJECT CLASS ATTRIBUTES  ===*/ 
+
 .dark-theme {
     --primary-color: #191A19;
     --secondary-color: #EEEDEF;
@@ -57,6 +60,7 @@
 .landing-container {
     padding: 280px 0 50px 0;
     margin: 0 auto;
+
     height: 90vh;
     width: 100vw;
     max-width: 1440px;
@@ -69,9 +73,9 @@
 
 .landing-footer {
     margin: 0 auto;
+    padding: 0 15px;
 
     width: 100%;
-    padding: 0 15px;
     max-width: 1440px;
     
     display: flex;
@@ -81,21 +85,25 @@
 }
 
 .landing-footer p {
-    letter-spacing: .1em;
-    font-weight: 500;
     font-size: 1.05em;
+    font-weight: 500;
+    letter-spacing: .1em;
 }
 
 .server-right-msg {
-    color: var(--green-enchanted);
-    font-weight: 700;
     margin: 10px 0;
+
+    font-weight: 700;
+
+    color: var(--green-enchanted);
 }
 
 .server-error-msg {
-    color: var(--red-enchanted);
-    font-weight: 700;
     margin: 10px 0;
+
+    font-weight: 700;
+
+    color: var(--red-enchanted);
 }
 
 .client-form-control-success {
@@ -107,6 +115,9 @@
     border-bottom: 1px solid var(--red-enchanted);
 }
 
+
+/*=== GLOBAL PROJECT ELEMENT STYLING  ===*/ 
+
 * {
     margin: 0;
     padding: 0;
@@ -114,14 +125,15 @@
 }
 
 html {
-    scroll-behavior: smooth;
     font-family: var(--rajdhani);
     
+    scroll-behavior: smooth;
     overflow-x: hidden;
 }
 
 body {
     margin: 0 auto;
+
     min-width: 320px;
 
     background-color:  var(--primary-color);
@@ -148,8 +160,8 @@ h1, h2, h3, h4, p, a {
 }
 
 h2 {
-    letter-spacing: .35em;
     font-weight: 500;
+    letter-spacing: .35em;
     text-indent: -.35em;
 }
 
@@ -158,31 +170,37 @@ main {
 }
 
 input {
+    outline: none;
+    border: none;
+
     color: var(--secondary-color);
     font-family: var(--rajdhani);
     background-color: var(--primary-color);
-    outline: none;
-    border: none;
+    
     border-bottom: 1px solid var(--secondary-color);
 }
 
 .form-client-error-message {
-    color: var(--red-enchanted);
     font-weight: 700;
+    color: var(--red-enchanted);
 }
 
+
+/*=== GLOBAL PROJECT MEDIA SCREEN STYLING  ===*/ 
 
 @media screen and (max-width: 700px) {
     .landing-container {
         padding: 0;
-        justify-content: space-around;
 
         height: 85vh;
+        
+        justify-content: space-around;
     }
 
     .landing-footer {
-        width: 80%;
         padding: 0;
+        
+        width: 80%;
 
         overflow: hidden;
     }

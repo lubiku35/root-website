@@ -10,7 +10,7 @@
 
     <!-- Cascading Style Sheets -->
     <link rel="stylesheet" href="./main.css">
-    <title>LUBIKU</title>
+    <title>LUBIKU | BLOG METANOIA</title>
 </head>
 
 <body>

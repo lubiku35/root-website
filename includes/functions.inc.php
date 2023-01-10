@@ -99,7 +99,7 @@ function createUser($conn, $name, $username, $email, $pwd)
     mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $username, $hashpwd);
     mysqli_stmt_execute($stmt);
     mysqli_stmt_close($stmt);
-    header("location: ..../blog-new-account.php?error=none");
+    header("location: ../blog-new-account.php?error=none");
     exit();
 }
 

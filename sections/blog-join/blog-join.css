@@ -32,13 +32,13 @@
 
 .join-blog-container form label {
     margin: 0 auto;
+    margin-bottom: 20px;
     width: 100%;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .join-blog-container form label p {
@@ -51,15 +51,17 @@
 .join-blog-container form label input {
     width: 55%;
     padding: 4px 12px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     font-size: 1.1em;
-    color: var(--secondary-color);
-    font-family: var(--rajdhani);
-    background-color: var(--primary-color);
-    outline: none;
-    border: none;
-    border-bottom: 1px solid var(--secondary-color);
+}
+
+.join-blog-container form label small {
+    width: 55%;
+}
+
+.client-form-control-success {
+    border-bottom: 1px solid var(--green-enchanted);
 }
 
 .join-blog-container form  .btn-join {
@@ -114,6 +116,11 @@
     .join-blog-container form label input {
         width: 90%;
     }
+
+    
+    .join-blog-container form label small {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -127,5 +134,8 @@
         font-size: .9em;
 
     }
-
+    
+    .join-blog-container form label small {
+        width: 100%;
+    }
 }

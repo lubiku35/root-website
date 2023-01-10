@@ -12,7 +12,7 @@
                     class='bolder'>discover more</a>, and to see what projects are currently open, use <a href='http://'
                     class='bolder'>explore projects</a>.</p>
             <footer id='about-author-footer'>
-                <a href=''>discover more</a>
+                <a href='./about-author.php'>discover more</a>
                 <a href='#projects'>explore projects</a>
             </footer>
         </section>

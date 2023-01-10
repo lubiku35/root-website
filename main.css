@@ -98,6 +98,15 @@
     margin: 10px 0;
 }
 
+.client-form-control-success {
+    border: none;
+    border-bottom: 1px solid var(--green-enchanted);
+}
+
+.client-form-control-error {
+    border-bottom: 1px solid var(--red-enchanted);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -147,6 +156,21 @@ h2 {
 main {
     display: block;
 }
+
+input {
+    color: var(--secondary-color);
+    font-family: var(--rajdhani);
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.form-client-error-message {
+    color: var(--red-enchanted);
+    font-weight: 700;
+}
+
 
 @media screen and (max-width: 700px) {
     .landing-container {

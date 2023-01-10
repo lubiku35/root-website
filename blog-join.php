@@ -22,14 +22,16 @@
     <main id='blog-join-landing' class='join-blog-container'>
         <h1>LOGIN</h1>
 
-        <form action="./includes/login.inc.php" method="post">
+        <form action="./includes/login.inc.php" method="post" id="form">
             <label for="username">
                 <p>USERNAME / EMAIL:</p>
-                <input type="text" name="username" placeholder="username">
+                <input id="login-username" type="text" name="username" placeholder="username">
+                <small class="form-client-error-message"></small>
             </label>
             <label for="pwd">
                 <p>PASSWORD:</p>
-                <input type="password" name="pwd" id="pwd" placeholder="password">
+                <input id="login-password" type="password" name="pwd" id="pwd" placeholder="password">
+                <small class="form-client-error-message"></small>
             </label>
             <button type="submit" name="submit" class='btn-join'>LOG IN</button>
         </form>
@@ -55,6 +57,7 @@
         ?>
 
     <script src="./scripts/theme-changer.js"></script>
+    <script src="./scripts/formvalidation_login.js"></script>
 </body>
 
 </html>

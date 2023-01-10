@@ -57,18 +57,10 @@
 }
 
 #contact form p input {
-    border: none;
-    outline: none;
-    padding-bottom: 5px;
-    background: transparent;
-    border-bottom: 1px solid var(--secondary-color);
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    font-family: var(--rajdhani);
-
-
     min-width: 100px;
     width: 250px;
+    padding-bottom: 5px;
+    
 }
 
 #subject {

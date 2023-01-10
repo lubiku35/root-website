@@ -22,20 +22,23 @@
     <!--===== CONTACT SECTION =====-->
     <section id="contact">
         <h1>stay in touch</h1>
-        <form action="">
+        <form action="" id="form">
             <div class="row">
                 <p>
                     <label for="name">name</label>
-                    <input type="text" name="name" value="" required>
+                    <input id="contact-name" type="text" name="name" value="">
+                    <small class="form-client-error-message"></small>
                 </p>
                 <p>
                     <label for="email">email</label>
-                    <input type="email" name="email" value="" required>
+                    <input id="contact-email" type="email" name="email" value="">
+                    <small class="form-client-error-message"></small>
                 </p>
             </div>
             <p id="subject">
                 <label for="subject">subject</label>
-                <input type="text" name="subject" value="" required>
+                <input id="contact-subject" type="text" name="subject" value="">
+                <small class="form-client-error-message"></small>
             </p>
             <p id="message">
                 <label for="message">message</label>
@@ -53,6 +56,7 @@
         ?>
 
     <script src='./scripts/theme-changer.js'></script>
+    <script src="./scripts/formvalidation_contact.js"></script>
 </body>
 
 </html>

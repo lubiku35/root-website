@@ -22,26 +22,31 @@
     <main id='blog-register-landing' class='join-blog-container'>
         <h1>REGISTER</h1>
 
-        <form action="./includes/register.inc.php" method="post">
+        <form action="./includes/register.inc.php" method="post" id="form">
             <label for="name">
                 <p>name:</p>
-                <input type="text" name="name" placeholder="name">
+                <input id="register-name" type="text" name="name" placeholder="name">
+                <small class="form-client-error-message"></small>
             </label>
             <label for="username">
                 <p>username:</p>
-                <input type="text" name="username" placeholder="username">
+                <input id="register-username" type="text" name="username" placeholder="username">
+                <small class="form-client-error-message"></small>
             </label>
             <label for="email">
                 <p>email:</p>
-                <input type="text" name="email" placeholder="email">
+                <input id="register-email" type="email" name="email" placeholder="email">
+                <small class="form-client-error-message"></small>
             </label>
             <label for="pwd">
                 <p>password:</p>
-                <input type="password" name="pwd" id="password" placeholder="password">
+                <input id="register-password" type="password" name="pwd" placeholder="password">
+                <small class="form-client-error-message"></small>
             </label>
             <label for="pwdrepeat">
                 <p>repeat password:</p>
-                <input type="password" name="pwdrepeat" id="password" placeholder="repeat password">
+                <input id="register-password-repeat" type="password" name="pwdrepeat" placeholder="repeat password">
+                <small class="form-client-error-message"></small>
             </label>
             <button type="submit" name="submit" class='btn-join'>REGISTER</button>
         </form>
@@ -78,6 +83,7 @@
         ?>
 
     <script src="./scripts/theme-changer.js"></script>
+    <script src="./scripts/formvalidation_register.js"></script>
 </body>
 
 </html>

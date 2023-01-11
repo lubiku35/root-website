@@ -35,6 +35,7 @@
     include_once './sections/footer/footer.php'
         ?>
 
+    <!-- Scripts Included -->
     <script src="./scripts/theme-changer.js"></script>
     <script src="./scripts/blog-filter.js"></script>
 </body>

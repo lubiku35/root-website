@@ -1,6 +1,8 @@
 <?php
-
+// registration handler which contains all the neccessary functions to provide registration for user 
 if (isset($_POST["submit"])) {
+
+    // data get from form 
     $name = $_POST["name"];
     $username = $_POST["username"];
     $email = $_POST["email"];

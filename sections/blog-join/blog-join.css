@@ -107,6 +107,8 @@
     background-size: 100% 1px;
 }
 
+/* Fix elements on smaller resolutions */
+
 @media screen and (max-width: 1440px) {
 
     .join-blog-container form label p {

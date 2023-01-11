@@ -59,6 +59,7 @@
     opacity: 1;
 }
 
+/* Fix elements on smaller resolutions */
 
 @media screen and (max-width: 700px) {
     #blog-landing-name {

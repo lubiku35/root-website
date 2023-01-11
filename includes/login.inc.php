@@ -1,6 +1,9 @@
 <?php
 
+// Login handler which contains all the neccessary functions to provide login for user 
 if (isset($_POST["submit"])) {
+
+    // data get from form 
     $username = $_POST["username"];
     $pwd = $_POST["pwd"];
 

@@ -1,3 +1,4 @@
+<!-- Header Website Section -->
 <header id='website-header'>
     <nav id='project-navigation'>
         <a href='./index.php'>luboslav motosicky</h2>

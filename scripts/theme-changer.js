@@ -1,3 +1,4 @@
+// Dark/Light Theme Switcher
 
 /* SOCIAL ICONS */
 let socials_linkedin = document.getElementById("socials-linkedin"); 

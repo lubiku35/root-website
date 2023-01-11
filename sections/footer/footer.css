@@ -54,6 +54,8 @@
     font-size: .8em;
 }
 
+/* Fix elements on smaller resolutions */
+
 @media screen and (max-width: 922px) {
     #website-footer .footer-text-holder {
         font-size: .7em;

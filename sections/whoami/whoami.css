@@ -144,6 +144,7 @@
     opacity: 1;
 }
 
+/* Resposivity for smaller screens */ 
 
 @media screen and (max-width: 1200px) {
     #about-author-footer {

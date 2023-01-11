@@ -24,10 +24,10 @@
     - [Client Side Scripting](#client-side-scripting)
     - [Server Side Scripting](#server-side-scripting)
     - [Project Outro](#project-outro)
-    - [Image Alt Attributes](#image-alt-attributes)
 
 ### Project Intro
 
+---
 
 #### Intro
 
@@ -38,6 +38,8 @@ My name is Luboslav Motosicky mostly seen or just appearing as "whoislubiku", ye
 Back to the topic, project LUBIKU is combination of stuff which i personaly do, like, follow and share. Also part of the project is personal portfolio and maybe some more things, okay let's find out.         
 
 ### Technologies Used
+
+---
 
 In this demo version of website I'm using the most common technologies for website development like Hypertext Markup Language, Cascading Style Sheets, JavaScript, PHP Hypertext Preprocessor and relational database MySQLi.   
 
@@ -62,6 +64,8 @@ PHP was originally an abbreviation of Personal Home Page, but it now stands for 
 The MySQLi Extension (MySQL on steroids) is a relational database driver used in the PHP scripting language to provide interface with MySQL databases. In this project i use this type od database to hold users data.
 
 ### Website Structure
+
+---
 
 Project lubiku contains 2 main parts until now, [Part Lubiku](#part-lubiku) and [Part Blog Project Metanoia](#part-blog-project-metanoia).
 
@@ -104,9 +108,9 @@ On project LUBIKU are:
 
   - [Home Landing](./sections/home-landing/home-landing.php) 
   
-- **Lubiku Home Projects** 
+- **Lubiku Home Project** 
   
-  - [Lubiku Home Projects](./sections/home-landing/home-landing.php) 
+  - [Lubiku Home Project](./sections/home-landing/home-landing.php) 
 
   
 - **Lubiku Home WhoamI**
@@ -127,17 +131,19 @@ On project LUBIKU are:
   
 - **Blog Project Metanoia Registration** 
   
-  - [Header Source Code](./blog-new-account.php) 
+  - [Blog Project Metanoia Registration](./blog-new-account.php) 
   
 - **Blog Project Metanoia LogIn**
 
-  - [Fotter Source Code](./blog-join.php) 
+  - [Blog Project Metanoia LogIn](./blog-join.php) 
 
 #### Lower-Level Sections
 
 Lower-Level sections are not available for now, these sections are considered as sections under prime sections for example articles on Blog Project Metanoia or full Curriculum Vitae under Lubiku section.
 
 ### Website Assets
+
+---
 
 Website assets or resources used in demo project LUBIKU are mostly images and svgs. Also we can include here imported fonts used in project.
 
@@ -164,7 +170,8 @@ Fonts used in project are:
 ### Server Side Scripting
 
 ### Project Outro
-### Image Alt Attributes
+
+
 
 
 

@@ -26,6 +26,9 @@
 /*====== CONTACT CASCADING STYLE SHEETS ======*/
 @import url(./sections/contact/contact.css);
 
+/*====== UNDER MAINTENANCE CASCADING STYLE SHEETS ======*/
+@import url(./sections/under-maintenance/under-maintenance.css);
+
 
 :root {
     /*=== PROJECT COLORS ===*/ 

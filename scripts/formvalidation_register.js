@@ -8,11 +8,19 @@ const register_email = document.getElementById('register-email');
 const register_password = document.getElementById('register-password');
 const register_password_repeat = document.getElementById('register-password-repeat');
 
+let register_name_valid = false;
+let register_username_valid = false;
+let register_email_valid = false;
+let register_password_valid = false;
+let register_password_repeat_valid = false;
+
 // Prevent Default behavior
-form.addEventListener('submit', e => {
-	e.preventDefault();
-	
+form.addEventListener('submit', e => {	
 	checkInputs();
+	
+	if (!register_email_valid || !register_email_valid || !register_email_valid || !register_password_valid || !register_password_repeat_valid) {
+		e.preventDefault();
+	}
 });
 
 function checkInputs() {
@@ -28,6 +36,7 @@ function checkInputs() {
 		setErrorFor(register_name, 'Username cannot be blank');
 	} else {
 		setSuccessFor(register_name);
+		register_name_valid = true;
 	}
 
 	// Check if register username is empty
@@ -35,6 +44,8 @@ function checkInputs() {
 		setErrorFor(register_username, 'Username cannot be blank');
 	} else {
 		setSuccessFor(register_username);
+		register_username_valid = true;
+
 	}
 	
 	// Check if register email is empty. and if it is valid email
@@ -44,6 +55,7 @@ function checkInputs() {
 		setErrorFor(register_email, 'Not a valid email');
 	} else {
 		setSuccessFor(register_email);
+		register_email_valid = true;
 	}
 	
 	// Check if register password is empty. and if passwords match
@@ -51,6 +63,7 @@ function checkInputs() {
 		setErrorFor(register_password, 'Password cannot be blank');
 	} else {
 		setSuccessFor(register_password);
+		register_password_valid = true;
 	}
 	
 	if(register_password_repeat_value === '') {
@@ -59,6 +72,7 @@ function checkInputs() {
 		setErrorFor(register_password_repeat, 'Passwords does not match');
 	} else{
 		setSuccessFor(register_password_repeat);
+		register_password_repeat_valid = true;
 	}
 }
 

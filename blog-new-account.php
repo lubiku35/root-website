@@ -18,6 +18,22 @@
     include_once "./sections/header/header.php"
         ?>
 
+
+    <?php
+
+    $name = "";
+    $username = "";
+    $email = "";
+
+    if (isset($_POST["submit"])) {
+
+        // data get from form 
+        $name = $_POST["name"];
+        $username = $_POST["username"];
+        $email = $_POST["email"];
+    }
+    ?>
+
     <!--===== LANDING PAGE SECTION =====-->
     <main id='blog-register-landing' class='join-blog-container'>
         <h1>REGISTER</h1>
@@ -25,27 +41,31 @@
         <form action="./includes/register.inc.php" method="post" id="form">
             <label for="name">
                 <p>name:</p>
-                <input id="register-name" type="text" name="name" placeholder="name">
+                <input id="register-name" type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"
+                    placeholder="name" required>
                 <small class="form-client-error-message"></small>
             </label>
             <label for="username">
                 <p>username:</p>
-                <input id="register-username" type="text" name="username" placeholder="username">
+                <input id="register-username" type="text" name="username"
+                    value="<?php echo htmlspecialchars($username) ?>" placeholder="username" required>
                 <small class="form-client-error-message"></small>
             </label>
             <label for="email">
                 <p>email:</p>
-                <input id="register-email" type="email" name="email" placeholder="email">
+                <input id="register-email" type="email" name="email" value="<?php echo htmlspecialchars($email) ?>"
+                    placeholder="email" required>
                 <small class="form-client-error-message"></small>
             </label>
             <label for="pwd">
                 <p>password:</p>
-                <input id="register-password" type="password" name="pwd" placeholder="password">
+                <input id="register-password" type="password" name="pwd" placeholder="password" required>
                 <small class="form-client-error-message"></small>
             </label>
             <label for="pwdrepeat">
                 <p>repeat password:</p>
-                <input id="register-password-repeat" type="password" name="pwdrepeat" placeholder="repeat password">
+                <input id="register-password-repeat" type="password" name="pwdrepeat" placeholder="repeat password"
+                    required>
                 <small class="form-client-error-message"></small>
             </label>
             <button type="submit" name="submit" class='btn-join'>REGISTER</button>

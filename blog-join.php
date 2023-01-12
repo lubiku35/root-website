@@ -25,12 +25,12 @@
         <form action="./includes/login.inc.php" method="post" id="form">
             <label for="username">
                 <p>USERNAME / EMAIL:</p>
-                <input id="login-username" type="text" name="username" placeholder="username">
+                <input id="login-username" type="text" name="username" placeholder="username" required>
                 <small class="form-client-error-message"></small>
             </label>
             <label for="pwd">
                 <p>PASSWORD:</p>
-                <input id="login-password" type="password" name="pwd" id="pwd" placeholder="password">
+                <input id="login-password" type="password" name="pwd" id="pwd" placeholder="password" required>
                 <small class="form-client-error-message"></small>
             </label>
             <button type="submit" name="submit" class='btn-join'>LOG IN</button>

@@ -26,18 +26,18 @@
             <div class="row">
                 <p>
                     <label for="name">name</label>
-                    <input id="contact-name" type="text" name="name" value="">
+                    <input id="contact-name" type="text" name="name" value="" required>
                     <small class="form-client-error-message"></small>
                 </p>
                 <p>
                     <label for="email">email</label>
-                    <input id="contact-email" type="email" name="email" value="">
+                    <input id="contact-email" type="email" name="email" value="" required>
                     <small class="form-client-error-message"></small>
                 </p>
             </div>
             <p id="subject">
                 <label for="subject">subject</label>
-                <input id="contact-subject" type="text" name="subject" value="">
+                <input id="contact-subject" type="text" name="subject" value="" required>
                 <small class="form-client-error-message"></small>
             </p>
             <p id="message">

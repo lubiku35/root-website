@@ -20,13 +20,7 @@
 
 
     <?php
-
-    $name = "";
-    $username = "";
-    $email = "";
-
     if (isset($_POST["submit"])) {
-
         // data get from form 
         $name = $_POST["name"];
         $username = $_POST["username"];
@@ -42,13 +36,13 @@
             <label for="name">
                 <p>name:</p>
                 <input id="register-name" type="text" name="name" value="<?php echo htmlspecialchars($name) ?>"
-                    placeholder="name" required>
+                    placeholder="name">
                 <small class="form-client-error-message"></small>
             </label>
             <label for="username">
                 <p>username:</p>
                 <input id="register-username" type="text" name="username"
-                    value="<?php echo htmlspecialchars($username) ?>" placeholder="username" required>
+                    value="<?php echo htmlspecialchars($username) ?>" placeholder="username">
                 <small class="form-client-error-message"></small>
             </label>
             <label for="email">
@@ -103,7 +97,7 @@
         ?>
 
     <script src="./scripts/theme-changer.js"></script>
-    <script src="./scripts/formvalidation_register.js"></script>
+    <!-- <script src="./scripts/formvalidation_register.js"></script> -->
 </body>
 
 </html>

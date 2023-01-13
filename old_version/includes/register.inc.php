@@ -8,12 +8,14 @@ if (isset($_POST["submit"])) {
     $email = $_POST["email"];
     $pwd = $_POST["pwd"];
     $pwdrepeat = $_POST["pwdrepeat"];
+    $error = "";
 
     require_once "dbh.inc.php";
     require_once "functions.inc.php";
 
     if (emptyInputSignup($name, $username, $email, $pwd, $pwdrepeat) !== false) {
-        header("location: ../blog-new-account.php?error=emptyinput");
+        // header("location: ../blog-new-account.php?error=emptyinput");
+        $_POST["error"] = "emptyinput";
         exit();
     }
 

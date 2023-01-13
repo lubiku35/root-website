@@ -1,5 +1,4 @@
 // Javascript Contact Form Validation
-
 const form = document.getElementById('form')
 
 const contact_name = document.getElementById('contact-name');

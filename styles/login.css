@@ -12,6 +12,10 @@
     justify-content: center;
 }
 
+#login-container .section-title {
+    margin-bottom: 100px;
+}
+
 #login-form {
     width: 80%;
 
@@ -23,6 +27,7 @@
 }
 
 #login-form .login-form-input-wrapper {
+    margin-bottom: 50px;
     width: 45%;
 
     display: flex;
@@ -30,6 +35,17 @@
     align-items: center;
     justify-content: space-between;
 }
+
+#login-form .login-form-button-wrapper {
+    margin-bottom: 35px;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
 
 #login-form .login-form-input-wrapper .form-input-row {
     margin-bottom: 10px;
@@ -39,4 +55,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+}
+
+#login-form .login-form-input-wrapper .form-input-row p, #login-form .login-form-input-wrapper .form-input-row label {
+    letter-spacing: .1em;
+}
+
+#dont-have-acc {
+    font-size: .9em;
+    letter-spacing: .1em;
+    font-weight: var(--rajdhani-medium);
+}
+
+#dont-have-acc a {
+    font-weight: var(--rajdhani-bolder);
 }

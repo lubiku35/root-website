@@ -25,29 +25,49 @@ session_start();
     ?>
 
     <main id="login-container">
-        <h2>login</h2>
+        <h2 class="section-title">login</h2>
+
         <form action="" method="post" id="login-form">
+
             <div class="login-form-input-wrapper">
+
                 <div class="form-input-row">
                     <label for="username">username / email:</label>
                     <p class="required-form-input">*</p>
                 </div>
+
                 <input type="text" name="username">
-                <p id="login-username-server-error-message">CLIENT MESSAGE!</p>
-                <p id="login-username-client-error-message">SERVER MESSAGE!</p>
+
+                <?php
+                // echo "<p id='login-server-error-message'>SERVER MESSAGE!</p>"
+                ?>
+
+                <p id="login-client-error-message"></p>
+
             </div>
+
             <div class="login-form-input-wrapper">
+
                 <div class="form-input-row">
                     <label for="password">password</label>
                     <p class="required-form-input">*</p>
                 </div>
+
                 <input type="text" name="password">
-                <p id="login-password-server-error-message">CLIENT MESSAGE!</p>
-                <p id="login-password-client-error-message">SERVER MESSAGE!</p>
+
+                <?php
+                // echo "<p id='login-server-error-message'>SERVER MESSAGE!</p>"
+                ?>
+
+                <p id="login-client-error-message"></p>
+
             </div>
-            <button type="submit">submit</button>
+            <div class="login-form-button-wrapper">
+                <button type="submit">log in</button>
+            </div>
         </form>
-        <h6 id="dont-have-acc">don't have an account ? <a href="./register.php">register here</a></h6>
+        <p id="dont-have-acc">don't have an account ? <a href="./register.php" class="underline-effect">register
+                here</a></p>
     </main>
 
 </body>

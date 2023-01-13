@@ -57,7 +57,7 @@ a {
 }
 
 input {
-    padding: 3px 8px;
+    padding: 5px 8px;
     width: 100%;
 
     outline: none;
@@ -69,7 +69,33 @@ input {
 }
 
 button[type="submit"] {
+    padding: 6px 16px;
+
+    cursor: pointer;
+
+    outline: none;
+    border: none;
+
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border: 1px solid var(--primary-dark);
+
     text-transform: uppercase;
+    letter-spacing: .1em;
+    font-weight: var(--rajdhani-bold);
+
+    transition: all .5s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    color: var(--primary-light);
+    background-color: var(--primary-dark);
+    border: 1px solid var(--primary-light);
+}
+
+.change-theme {
+    --primary-dark: #F6F6F6;
+    --primary-light: #131313;
 }
 
 .underline-effect {
@@ -89,5 +115,12 @@ button[type="submit"] {
 .required-form-input {
     color: red;
     font-weight: var(--rajdhani-bolder);
+}
+
+.section-title {
+    font-size: 2.2em;
+    font-weight: var(--rajdhani-bold);
+    letter-spacing: .1em;
+    margin-left: .1em;
 }
 

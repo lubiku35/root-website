@@ -17,15 +17,24 @@
     /* === PROJECT COLORS === */
     --primary-dark: #131313;
     --primary-light: #F6F6F6;
+    --secondary-dark: #1313130a;
+    --secondary-light: #F6F6F60a;
 
     /* === PROJECT FONTS === */
     --rajdhani-font: 'Rajdhani', monospace, sans-serif;
     /* === PROJECT SIZES === */
+
     /* === PROJECT FONT WEIGHTS === */
+    --rajdhani-light: 300;
+    --rajdhani-medium: 400;
+    --rajdhani-bold: 500;
+    --rajdhani-bolder: 700;
+    
     /* === PROJECT SPACINGS === */
 }
 
 html {
+    overflow-x: hidden;
     color: var(--primary-dark);
     font-family: var(--rajdhani-font);
     text-transform: uppercase;        
@@ -36,6 +45,22 @@ ul, ol, li {
 }
 
 a {
+    font-weight: var(--rajdhani-bold);
     color: var(--primary-dark);        
     text-decoration: none;
+    opacity: .98;
+}
+
+.underline-effect {
+    padding-bottom: 1px;
+    background-image: linear-gradient(var(--primary-dark) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0s 0.5s;
+}
+
+.underline-effect:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 1px;
 }

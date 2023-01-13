@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+$_SESSION["colormode"] = "noob";
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +23,7 @@
     include_once("./header.php")
         ?>
 
-    <section id="welcome">
+    <section id="welcome" style="height: 500vh;">
 
     </section>
 
@@ -31,6 +38,8 @@
     <footer>
 
     </footer>
+
+    <script src="./scripts/on_scroll_nav.js"></script>
 </body>
 
 </html>

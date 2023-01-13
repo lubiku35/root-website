@@ -1,3 +1,7 @@
+<?php
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +19,9 @@
     <?php
     include_once("./header.php")
         ?>
+
+
+    <?php echo $_SESSION["colormode"] ?>
 </body>
 
 </html>

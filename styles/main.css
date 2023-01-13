@@ -6,6 +6,7 @@
 
 /* ===== SECTIONS CASCADING STYLE SHEETS ===== */
 @import url(./header.css);
+@import url(./login.css);
 
 * {
     padding: 0;
@@ -40,6 +41,10 @@ html {
     text-transform: uppercase;        
 }
 
+body {
+    background-color: var(--primary-light);
+}
+
 ul, ol, li {
     list-style-type: none;
 }
@@ -49,6 +54,22 @@ a {
     color: var(--primary-dark);        
     text-decoration: none;
     opacity: .98;
+}
+
+input {
+    padding: 3px 8px;
+    width: 100%;
+
+    outline: none;
+    border: none;
+
+    color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border-bottom: 1px solid var(--primary-dark);
+}
+
+button[type="submit"] {
+    text-transform: uppercase;
 }
 
 .underline-effect {
@@ -64,3 +85,9 @@ a {
     background-position: 100% 100%; /*OR bottom right*/
     background-size: 100% 1px;
 }
+
+.required-form-input {
+    color: red;
+    font-weight: var(--rajdhani-bolder);
+}
+

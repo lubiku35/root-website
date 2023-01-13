@@ -1,6 +1,11 @@
+/* === RAJDHANI === */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 /* ===== NORMALIZE CASCADING STYLE SHEETS ===== */
 @import url(./normalize.css);
+
+/* ===== SECTIONS CASCADING STYLE SHEETS ===== */
+@import url(./header.css);
 
 * {
     padding: 0;
@@ -10,8 +15,27 @@
 
 :root {
     /* === PROJECT COLORS === */
+    --primary-dark: #131313;
+    --primary-light: #F6F6F6;
+
     /* === PROJECT FONTS === */
+    --rajdhani-font: 'Rajdhani', monospace, sans-serif;
     /* === PROJECT SIZES === */
     /* === PROJECT FONT WEIGHTS === */
     /* === PROJECT SPACINGS === */
+}
+
+html {
+    color: var(--primary-dark);
+    font-family: var(--rajdhani-font);
+    text-transform: uppercase;        
+}
+
+ul, ol, li {
+    list-style-type: none;
+}
+
+a {
+    color: var(--primary-dark);        
+    text-decoration: none;
 }

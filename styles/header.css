@@ -1,0 +1,37 @@
+#project-header {
+    position: sticky;
+
+    width: 100vw;
+    height: 10vh;
+    
+    padding: 0 50px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#project-navigation {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-project-navigation {
+    width: 70%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    gap: 70px;
+}
+
+#theme-switcher-img {
+    width: 25px;
+}

@@ -178,3 +178,10 @@ button[type="submit"]:hover {
 label:hover .tooltip-msg {
     visibility: visible;
 }
+
+.reg-client-error-message {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: .9em;
+    color: var(--red-enchanted);
+}

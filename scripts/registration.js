@@ -1,5 +1,6 @@
 // elements variables
 const reg_form = document.getElementById("reg-form");
+
 const reg_name = document.getElementById("reg-name");
 const reg_username = document.getElementById("reg-username");
 const reg_email = document.getElementById("reg-email");
@@ -24,10 +25,13 @@ let valid_reg_password_repeat_message;
 let valid_reg_conditions_message;
 
 reg_form.addEventListener('submit', e => {
-    console.log("----------------------------------");
+
     checkUserInputs();
 
-    e.preventDefault()
+    if (!valid_reg_name || !valid_reg_username || !valid_reg_email || !valid_reg_password || !valid_reg_password_repeat || !valid_reg_conditions) {
+        e.preventDefault()
+    }
+
 })
 
 function checkUserInputs() {
@@ -41,6 +45,14 @@ function checkUserInputs() {
     const reg_password_value =  reg_password.value.trim();
     const reg_password_repeat_value = reg_password_repeat.value.trim();
     const reg_conditions_value = reg_conditions.checked;
+
+
+    const reg_name_error_msg_box = document.getElementById("client-error-name");
+    const reg_username_error_msg_box = document.getElementById("client-error-username");
+    const reg_email_error_msg_box = document.getElementById("client-error-email");
+    const reg_password_error_msg_box = document.getElementById("client-error-password");
+    const reg_password_repeat_error_msg_box = document.getElementById("client-error-password-repeat");
+    const reg_conditions_error_msg_box = document.getElementById("client-error-conditions");
 
     let name = checkName(reg_name_value);
     valid_reg_name = name[0];
@@ -66,24 +78,165 @@ function checkUserInputs() {
     valid_reg_conditions = conditions[0];
     valid_reg_conditions_message = conditions[1];
 
+    if (!valid_reg_name || !valid_reg_username || !valid_reg_email || !valid_reg_password || !valid_reg_password_repeat || !valid_reg_conditions) {
+        
+        if (valid_reg_name_message != false) {
+            reg_name_error_msg_box.innerText = valid_reg_name_message;
+            
+            if (reg_name.classList.contains('client-success-input')) {
+                reg_name.classList.remove('client-success-input');
+                reg_name.classList.add('client-error-input');
+            } else if (reg_name.classList.contains('client-error-input')) {
+                reg_name.classList.remove('client-error-input');
+                reg_name.classList.add('client-error-input');
+            } else {
+                reg_name.classList.add('client-error-input');
+            }
+        } else {
+            reg_name_error_msg_box.innerText = "";
+            
+            if (reg_name.classList.contains('client-success-input')) {
+                reg_name.classList.remove('client-success-input');
+                reg_name.classList.add('client-success-input');
+            } else if (reg_name.classList.contains('client-error-input')) {
+                reg_name.classList.remove('client-error-input');
+                reg_name.classList.add('client-success-input');
+            } else {
+                reg_name.classList.add('client-success-input');
+            }
+        }
+        
+        if (valid_reg_username_message != false) {
+            reg_username_error_msg_box.innerText = valid_reg_username_message;
+            
+            if (reg_username.classList.contains('client-success-input')) {
+                reg_username.classList.remove('client-success-input');
+                reg_username.classList.add('client-error-input');
+            } else if (reg_username.classList.contains('client-error-input')) {
+                reg_username.classList.remove('client-error-input');
+                reg_username.classList.add('client-error-input');
+            } else {
+                reg_username.classList.add('client-error-input');
+            }
+        } else {
+            reg_username_error_msg_box.innerText = "";
 
-    console.log(valid_reg_name + " name");
-    console.log(valid_reg_name_message + " name msg");
+            if (reg_username.classList.contains('client-success-input')) {
+                reg_username.classList.remove('client-success-input');
+                reg_username.classList.add('client-success-input');
+            } else if (reg_username.classList.contains('client-error-input')) {
+                reg_username.classList.remove('client-error-input');
+                reg_username.classList.add('client-success-input');
+            } else {
+                reg_username.classList.add('client-success-input');
+            }
+        }
+        
+        if (valid_reg_email_message != false) {
+            reg_email_error_msg_box.innerText = valid_reg_email_message;
+            
+            if (reg_email.classList.contains('client-success-input')) {
+                reg_email.classList.remove('client-success-input');
+                reg_email.classList.add('client-error-input');
+            } else if (reg_email.classList.contains('client-error-input')) {
+                reg_email.classList.remove('client-error-input');
+                reg_email.classList.add('client-error-input');
+            } else {
+                reg_email.classList.add('client-error-input');
+            }
 
-    console.log(valid_reg_username + " username");
-    console.log(valid_reg_username_message + " username msg");
-    
-    console.log(valid_reg_email + " email");
-    console.log(valid_reg_email_message + " email msg");
-    
-    console.log(valid_reg_password + " password");
-    console.log(valid_reg_password_message + " password msg");
-    
-    console.log(valid_reg_password_repeat + " password repeat");
-    console.log(valid_reg_password_repeat_message + " password repeat msg");
-    
-    console.log(valid_reg_conditions + " conditions");
-    console.log(valid_reg_conditions_message + " conditions msg");
+        } else {
+            reg_email_error_msg_box.innerText = "";
+
+            if (reg_email.classList.contains('client-success-input')) {
+                reg_email.classList.remove('client-success-input');
+                reg_email.classList.add('client-success-input');
+            } else if (reg_email.classList.contains('client-error-input')) {
+                reg_email.classList.remove('client-error-input');
+                reg_email.classList.add('client-success-input');
+            } else {
+                reg_email.classList.add('client-success-input');
+            }
+        }
+        
+        if (valid_reg_password_message != false) {
+            reg_password_error_msg_box.innerText = valid_reg_password_message;
+            
+            if (reg_password.classList.contains('client-success-input')) {
+                reg_password.classList.remove('client-success-input');
+                reg_password.classList.add('client-error-input');
+            } else if (reg_password.classList.contains('client-error-input')) {
+                reg_password.classList.remove('client-error-input');
+                reg_password.classList.add('client-error-input');
+            } else {
+                reg_password.classList.add('client-error-input');
+            }
+        } else {
+            reg_password_error_msg_box.innerText = "";
+
+            if (reg_password.classList.contains('client-success-input')) {
+                reg_password.classList.remove('client-success-input');
+                reg_password.classList.add('client-success-input');
+            } else if (reg_password.classList.contains('client-error-input')) {
+                reg_password.classList.remove('client-error-input');
+                reg_password.classList.add('client-success-input');
+            } else {
+                reg_password.classList.add('client-success-input');
+            }
+        }
+        
+        if (valid_reg_password_repeat_message != false) {
+            reg_password_repeat_error_msg_box.innerText = valid_reg_password_repeat_message;
+            
+            if (reg_password_repeat.classList.contains('client-success-input')) {
+                reg_password_repeat.classList.remove('client-success-input');
+                reg_password_repeat.classList.add('client-error-input');
+            } else if (reg_password_repeat.classList.contains('client-error-input')) {
+                reg_password_repeat.classList.remove('client-error-input');
+                reg_password_repeat.classList.add('client-error-input');
+            } else {
+                reg_password_repeat.classList.add('client-error-input');
+            }
+        } else {
+            reg_password_repeat_error_msg_box.innerText = "";
+
+            if (reg_password_repeat.classList.contains('client-success-input')) {
+                reg_password_repeat.classList.remove('client-success-input');
+                reg_password_repeat.classList.add('client-success-input');
+            } else if (reg_password_repeat.classList.contains('client-error-input')) {
+                reg_password_repeat.classList.remove('client-error-input');
+                reg_password_repeat.classList.add('client-success-input');
+            } else {
+                reg_password_repeat.classList.add('client-success-input');
+            }
+        }
+        
+        if (valid_reg_conditions_message != false) {
+            reg_conditions_error_msg_box.innerText = valid_reg_conditions_message;
+            
+            if (reg_conditions.classList.contains('client-success-input')) {
+                reg_conditions.classList.remove('client-success-input');
+                reg_conditions.classList.add('client-error-input');
+            } else if (reg_conditions.classList.contains('client-error-input')) {
+                reg_conditions.classList.remove('client-error-input');
+                reg_conditions.classList.add('client-error-input');
+            } else {
+                reg_conditions.classList.add('client-error-input');
+            }
+        } else {
+            reg_conditions_error_msg_box.innerText = "";
+
+            if (reg_conditions.classList.contains('client-success-input')) {
+                reg_conditions.classList.remove('client-success-input');
+                reg_conditions.classList.add('client-success-input');
+            } else if (reg_conditions.classList.contains('client-error-input')) {
+                reg_conditions.classList.remove('client-error-input');
+                reg_conditions.classList.add('client-success-input');
+            } else {
+                reg_conditions.classList.add('client-success-input');
+            }
+        }
+    }
 }
 
 
@@ -170,14 +323,6 @@ function checkConditions(conditions) {
     } else {
         return [true, false];
     }
-}
-
-function setErrorFor(input) {
-    input.classList.toggle("client-error-input");
-}
-
-function setSuccessFor(input) {
-    input.classList.toggle("client-success-input");
 }
 
 function isEmail(email) {

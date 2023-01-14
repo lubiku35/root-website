@@ -21,23 +21,26 @@ session_start();
         ?>
 
     <section id="login">
-        <h2>sign in</h2>
-        <form action="" method="post">
+        <h2>log in</h2>
+        <form action="" method="post" id="log-form">
             <label for="username"></label>
-            <input type="text" name="username" placeholder="USERNAME / EMAIL" value="">
+            <input type="text" name="username" placeholder="USERNAME / EMAIL" value="" id="log-username">
 
             <label for="password"></label>
-            <input type="password" name="password" placeholder="PASSWORD">
+            <input type="password" name="password" placeholder="PASSWORD" id="log-password">
 
+            <p class="reg-client-error-message" id="client-error-login"></p>
             <?php
 
             ?>
 
-            <button type="submit">sign in</button>
+            <button type="submit">log in</button>
         </form>
         <p id="dont-have-an-acc">don't have an account ? <a href="./register.php" class="underline-effect">register
                 here</a></p>
     </section>
+
+    <script src="./scripts/login.js"></script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@ session_start();
         <h2>sign in</h2>
         <form action="" method="post">
             <label for="username"></label>
-            <input type="text" name="username" value="" placeholder="USERNAME / EMAIL">
+            <input type="text" name="username" placeholder="USERNAME / EMAIL" value="">
 
             <label for="password"></label>
             <input type="password" name="password" placeholder="PASSWORD">

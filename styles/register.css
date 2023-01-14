@@ -27,6 +27,7 @@
     text-align: right;
 }
 #register form input {
+    margin-top: 5px;
     margin-bottom: 35px;
 }
 
@@ -51,6 +52,7 @@
 #register .conditions-row-field label {
     text-align: left;
 }
+
 
 #register .conditions-row-field input {
     margin: 0;

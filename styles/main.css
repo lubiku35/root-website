@@ -157,3 +157,24 @@ button[type="submit"]:hover {
 .red-enchanted {
     color: var(--red-enchanted);
 } 
+
+.client-error-input {
+    border-bottom: 1px solid var(--red-enchanted);
+}
+
+.client-success-input {
+    border-bottom: 1px solid var(--green-enchanted);
+}
+
+.tooltip {
+    padding-left: 35px;
+}
+
+.tooltip-msg {
+    font-size: .8em;
+    visibility: hidden;
+}
+
+label:hover .tooltip-msg {
+    visibility: visible;
+}

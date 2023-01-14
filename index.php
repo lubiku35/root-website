@@ -23,11 +23,13 @@ $_SESSION["colormode"] = "noob";
     include_once("./header.php")
         ?>
 
-    <section id="welcome" style="height: 500vh;">
+    <?php
+    include_once("./welcome.php")
+        ?>
 
-    </section>
 
-    <section id="whoami">
+
+    <section id="whoami" style="height: 500vh;">
 
     </section>
 

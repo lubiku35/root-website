@@ -20,56 +20,18 @@ session_start();
     include_once("./header.php")
         ?>
 
-    <?php
+    <section id="login">
+        <h2>LOGIN</h2>
+        <form action="" method="post">
+            <label for="">username</label>
+            <input type="text">
 
-    ?>
+            <label for=""></label>
+            <input type="password">
 
-    <main id="login-container">
-        <h2 class="section-title">login</h2>
-
-        <form action="" method="post" id="login-form">
-
-            <div class="login-form-input-wrapper">
-
-                <div class="form-input-row">
-                    <label for="username">username / email:</label>
-                    <p class="required-form-input">*</p>
-                </div>
-
-                <input type="text" name="username">
-
-                <?php
-                // echo "<p id='login-server-error-message'>SERVER MESSAGE!</p>"
-                ?>
-
-                <p id="login-client-error-message"></p>
-
-            </div>
-
-            <div class="login-form-input-wrapper">
-
-                <div class="form-input-row">
-                    <label for="password">password</label>
-                    <p class="required-form-input">*</p>
-                </div>
-
-                <input type="text" name="password">
-
-                <?php
-                // echo "<p id='login-server-error-message'>SERVER MESSAGE!</p>"
-                ?>
-
-                <p id="login-client-error-message"></p>
-
-            </div>
-            <div class="login-form-button-wrapper">
-                <button type="submit">log in</button>
-            </div>
+            <button type="submit">login</button>
         </form>
-        <p id="dont-have-acc">don't have an account ? <a href="./register.php" class="underline-effect">register
-                here</a></p>
-    </main>
-
+    </section>
 </body>
 
 </html>

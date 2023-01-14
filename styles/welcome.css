@@ -1,0 +1,50 @@
+#welcome {
+
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+
+    font-family: var(--azonix-font);
+}
+
+#welcome .heading-wrapper {
+    height: 13vh;
+    max-width: 1440px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#welcome .heading-wrapper #project-heading {
+    margin-left: .7em;
+    
+    font-size: 3em;
+    letter-spacing: .7em;
+}
+
+#welcome .heading-wrapper #project-description-heading {
+    font-size: .9em;
+    letter-spacing: 1.5em;
+}
+
+#welcome .project-welcome-footer {
+    height: 6vh;
+    width: 1440px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#welcome .project-welcome-footer a svg path {
+    stroke: var(--primary-dark);
+}

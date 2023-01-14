@@ -6,7 +6,7 @@
 
     width: 100vw;
     max-width: 100vw;
-    height: 10vh;
+    height: 12vh;
     
     padding: 0 50px;
 
@@ -38,8 +38,8 @@
     gap: 70px;
 }
 
-#main-project-navigation li a, #root-link{
-    letter-spacing: .1em;
+#project-navigation #root-link svg path{
+    fill: var(--primary-dark);
 }
 
 #theme-switcher-img {

@@ -1,12 +1,17 @@
 /* === RAJDHANI === */
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
+/* ===== AZONIX FONT CASCADING STYLE SHEETS ===== */
+@import url(../assets/fonts/azonix/stylesheet.css);
+
 /* ===== NORMALIZE CASCADING STYLE SHEETS ===== */
 @import url(./normalize.css);
 
 /* ===== SECTIONS CASCADING STYLE SHEETS ===== */
 @import url(./header.css);
+@import url(./welcome.css);
 @import url(./login.css);
+@import url(./register.css);
 
 * {
     padding: 0;
@@ -21,8 +26,17 @@
     --secondary-dark: #1313130a;
     --secondary-light: #F6F6F60a;
 
+    --red-enchanted: #DE2B2D;
+    --green-enchanted: #24D421;
+    --blue-enchanted: #2133D4;
+    --purple-enchanted: #901DD6;
+    --yellow-enchanted: #F5D424;
+    --orange-enchanted: #CE721D;
+
     /* === PROJECT FONTS === */
+    --azonix-font: 'azonixregular', monospace, sans-serif;
     --rajdhani-font: 'Rajdhani', monospace, sans-serif;
+    
     /* === PROJECT SIZES === */
 
     /* === PROJECT FONT WEIGHTS === */
@@ -49,10 +63,21 @@ ul, ol, li {
     list-style-type: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+
+    cursor: default;
+}
+
 a {
-    font-weight: var(--rajdhani-bold);
+    font-size: .85em;
+    letter-spacing: .15em;
+
+    font-family: var(--azonix-font);
     color: var(--primary-dark);        
     text-decoration: none;
+    
     opacity: .98;
 }
 

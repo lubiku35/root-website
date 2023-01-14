@@ -21,16 +21,22 @@ session_start();
         ?>
 
     <section id="login">
-        <h2>LOGIN</h2>
+        <h2>sign in</h2>
         <form action="" method="post">
-            <label for="">username</label>
-            <input type="text">
+            <label for="username"></label>
+            <input type="text" name="username" value="" placeholder="USERNAME / EMAIL">
 
-            <label for=""></label>
-            <input type="password">
+            <label for="password"></label>
+            <input type="password" name="password" placeholder="PASSWORD">
 
-            <button type="submit">login</button>
+            <?php
+
+            ?>
+
+            <button type="submit">sign in</button>
         </form>
+        <p id="dont-have-an-acc">don't have an account ? <a href="./register.php" class="underline-effect">register
+                here</a></p>
     </section>
 </body>
 

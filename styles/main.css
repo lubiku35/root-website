@@ -21,8 +21,8 @@
 
 :root {
     /* === PROJECT COLORS === */
-    --primary-dark: #131313;
-    --primary-light: #F6F6F6;
+    --primary-light: #131313;
+    --primary-dark: #F6F6F6;
     --secondary-dark: #1313130a;
     --secondary-light: #F6F6F60a;
 
@@ -68,6 +68,11 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 
     cursor: default;
+}
+
+h2 {
+    font-family: var(--azonix-font);
+    letter-spacing: .1em;
 }
 
 a {
@@ -149,3 +154,6 @@ button[type="submit"]:hover {
     margin-left: .1em;
 }
 
+.red-enchanted {
+    color: var(--red-enchanted);
+} 

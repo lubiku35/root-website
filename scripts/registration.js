@@ -252,10 +252,10 @@ function checkName(name) {
 function checkUsername(username) {
     whitespace = /\s/;
     if (username === '') {
-        let message = 'Plese fill in the username';
+        let message = 'please fill in the username';
         return [false, message];     
     }  else if (whitespace.test(username)){
-        let message = 'Please fill without whitespaces';
+        let message = 'username contains whitespaces';
         return [false, message];  
     } else {
         return [true, false];

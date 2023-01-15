@@ -5,7 +5,7 @@
 $SERVER_NAME = "localhost";
 $DB_USERNAME = "root";
 $DB_PASSWORD = "";
-$DB_NAME = "lubiku_users";
+$DB_NAME = "lubiku_databse";
 
 // Database Connection
 

@@ -17,7 +17,8 @@ session_start();
 
 <body>
 
-    <h2>succesfully created user for <?php echo $username ?></h2>
+    <h2>Ooops something went wrong</h2>
+    <a href="./index.php">navigate back</a>
 
     <script src="./scripts/on_scroll_nav.js"></script>
 </body>

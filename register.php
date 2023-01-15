@@ -60,6 +60,9 @@ session_start();
     $conditions_error = true;
     $conditions_error_msg = "";
 
+    require_once("./server/dbh.inc.php");
+    require_once("./server/data_validation.php");
+
 
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -67,6 +70,7 @@ session_start();
         if (empty($_POST["name"])) {
             $name_error_msg = "please fill in this field";
             $name_field = "client-error-input";
+            $name = false;
         } else {
             $name_field = "client-success-input";
             $name = trim($_POST["name"]);
@@ -76,9 +80,11 @@ session_start();
         if (empty($_POST["username"])) {
             $username_error_msg = "please fill in this field";
             $username_field = "client-error-input";
+            $username = false;
         } else if (strpos(trim($_POST["username"]), ' ') == true) {
             $username_error_msg = "username contains whitespaces";
             $username_field = "client-error-input";
+            $username = false;
         } else {
             $username_field = "client-success-input";
             $username = $_POST["username"];
@@ -88,9 +94,11 @@ session_start();
         if (empty($_POST["email"])) {
             $email_error_msg = "please fill in this field";
             $email_field = "client-error-input";
+            $email = false;
         } else if (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
             $email_error_msg = "email is not in valid form";
             $email_field = "client-error-input";
+            $email = false;
         } else {
             $email_field = "client-success-input";
             $email = $_POST["email"];
@@ -101,26 +109,32 @@ session_start();
             $password_error_msg = "please fill in this field";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else if (strlen($_POST["password"]) < 8) {
             $password_error_msg = "password must be at least 8 characters long";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else if (!preg_match("@[a-z]@", $_POST["password"])) {
             $password_error_msg = "password must contains at least one lowercase character";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else if (!preg_match("@[A-Z]@", $_POST["password"])) {
             $password_error_msg = "password must contains one uppercase character";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else if (!preg_match("@[0-9]@", $_POST["password"])) {
             $password_error_msg = "password must contains one digit";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else if (!preg_match("@[^\w]@", $_POST["password"])) {
             $password_error_msg = "password must contains one special character";
             $password_field = "client-error-input";
             $password_error = false;
+            $password = false;
         } else {
             $password_field = "client-success-input";
             $password = $_POST["password"];
@@ -136,6 +150,7 @@ session_start();
         } else if ($_POST["password-repeat"] !== $_POST["password"]) {
             $password_rpt_error_msg = "passwords does not match";
             $password_rpt_field = "client-error-input";
+            $password_rpt = false;
         } else {
             $password_rpt_field = "client-success-input";
             $password_rpt = $_POST["password-repeat"];
@@ -144,11 +159,15 @@ session_start();
         if (empty($_POST["conditions"])) {
             $conditions_error_msg = "please check this field";
             $conditions_field = "client-error-input";
+            $conditions = false;
         } else if ($_POST["conditions"] == "agree") {
             $conditions_field = "client-success-input";
             $conditions = trim($_POST["conditions"]);
         }
 
+        if ($name !== false && $username !== false && $email !== false && $password !== false && $password_rpt !== false && $conditions !== false) {
+            createUser($conn, $name, $username, $email, $password);
+        }
     }
 
     ?>

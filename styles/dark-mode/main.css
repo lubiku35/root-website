@@ -1,0 +1,175 @@
+/* === RAJDHANI === */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* ===== AZONIX FONT CASCADING STYLE SHEETS ===== */
+@import url(../../assets/fonts/azonix/stylesheet.css);
+
+/* ===== NORMALIZE CASCADING STYLE SHEETS ===== */
+@import url(../normalize.css);
+
+/* ===== SECTIONS CASCADING STYLE SHEETS ===== */
+@import url(../header.css);
+
+:root {
+    /* === PROJECT COLORS === */
+    --primary-color: #131313;
+    --secondary-color: #F6F6F6;
+
+    --red-enchanted: #DE2B2D;
+    --green-enchanted: #24D421;
+    --blue-enchanted: #2133D4;
+    --purple-enchanted: #901DD6;
+    --yellow-enchanted: #F5D424;
+    --orange-enchanted: #CE721D;
+
+    /* === PROJECT FONTS === */
+    --azonix-font: 'azonixregular', monospace, sans-serif;
+    --rajdhani-font: 'Rajdhani', monospace, sans-serif;
+    
+    /* === PROJECT SIZES === */
+    --smeller-size: .9rem;          /* 12px */ 
+    --basic-size: 1rem;             /* 16px */
+    --middle-size: 1.5rem;             /* 24px */
+    --bigger-size: 2rem;            /* 32px */
+    --main-heading-size: 3.5rem;      /* 56px */
+
+    /* === PROJECT FONT WEIGHTS === */
+    --rajdhani-light: 300;
+    --rajdhani-medium: 400;
+    --rajdhani-bold: 500;
+    --rajdhani-bolder: 700;
+    
+    /* === PROJECT HEIGHTS === */
+    --full-height: 100vh;
+    --80-height: 80vh;
+    --half-height: 50vh;
+    --40-height: 40vh;
+    --small-height: 20vh;
+    --smaller-height: 10vh;
+    
+    /* === PROJECT SPACINGS === */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--secondary-color);
+    font-family: var(--rajdhani-font);
+    text-transform: uppercase;
+
+    overflow-x: hidden;
+}
+
+body {
+    min-width: 20rem;
+    max-width: 100vw;
+    min-height: var(--full-height);
+
+    font-size: var(--basic-size);
+    background-color: var(--primary-color);
+
+}
+
+ul, ol, li {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+
+    cursor: default;
+}
+
+h1, h2 {
+    font-family: var(--azonix-font);
+}
+
+h1 {
+    font-size: var(--main-heading-size);
+}
+
+a {
+    color: var(--secondary-color); 
+    text-decoration: none;
+}
+
+path {
+    fill: var(--secondary-color);
+}
+
+.section-title {
+    margin-left: .1em;
+
+    font-family: var(--azonix-font);
+    font-size: var(--bigger-size);
+
+    letter-spacing: .1em;
+}
+
+.red-enchanted {
+    color: var(--red-enchanted);
+}
+
+.green-enchanted {
+    color: var(--green-enchanted);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.underline-effect {
+    letter-spacing: .07em;
+    
+    padding-bottom: 1px;
+    background-image: linear-gradient(var(--secondary-color) 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 1px;
+    background-repeat: no-repeat;
+
+    transition: background-size 0.3s, background-position 0s 0.5s;
+}
+
+.underline-effect:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 1px;
+}
+
+.form-input {
+    max-width: 100%;
+
+    padding: 6px 10px;
+
+    border: none;
+    outline: none;
+
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.divider {
+    margin: 0 auto;
+    opacity: .8;
+    max-width: 1440px;
+}
+
+#root-link {
+    font-size: var(--middle-size);
+}
+
+#root-link span {
+    font-family: sans-serif;
+}

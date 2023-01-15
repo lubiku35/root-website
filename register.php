@@ -10,7 +10,8 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/dark-mode/main.css" type="text/css">
+
 
     <title>L U B I K U</title>
 </head>
@@ -60,8 +61,10 @@ session_start();
     $conditions_error = true;
     $conditions_error_msg = "";
 
+    $creating_user_error = "";
+
     require_once("./server/dbh.inc.php");
-    require_once("./server/data_validation.php");
+    require_once("./server/data_validation.inc.php");
 
 
 
@@ -85,10 +88,14 @@ session_start();
             $username_error_msg = "username contains whitespaces";
             $username_field = "client-error-input";
             $username = false;
+        } else if (strlen(trim($_POST["username"])) < 3) {
+            $username_error_msg = "username must be at least 3 characters long";
+            $username_field = "client-error-input";
+            $username = false;
         } else {
             $username_field = "client-success-input";
             $username = $_POST["username"];
-            $_SESSION["s_name"] = $username;
+            $_SESSION["s_username"] = $username;
         }
 
         if (empty($_POST["email"])) {
@@ -166,7 +173,15 @@ session_start();
         }
 
         if ($name !== false && $username !== false && $email !== false && $password !== false && $password_rpt !== false && $conditions !== false) {
-            createUser($conn, $name, $username, $email, $password);
+
+            if (uidExists($conn, $username, $email) !== false) {
+                $creating_user_error = "Sorry, we can't crete yout accout because username or email is alredy taken try another";
+                $username_field = "client-error-input";
+                $email_field = "client-error-input";
+            } else {
+                createUser($conn, $name, $username, $email, $password);
+            }
+
         }
     }
 
@@ -227,6 +242,10 @@ session_start();
             </p>
 
             <button type="submit">create account</button>
+
+            <p class="reg-client-error-message" id="client-error-conditions">
+                <?php echo $creating_user_error ?>
+            </p>
         </form>
         <p id="have-an-acc">already have an account ? <a href="./login.php" class="underline-effect">log in here</a>
         </p>

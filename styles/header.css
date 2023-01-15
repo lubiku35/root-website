@@ -1,51 +1,52 @@
 #project-header {
     position: fixed;
-
+    width: 100%;
     top: 0;
-    left: 0;
-
-    width: 100vw;
-    max-width: 100vw;
-    height: 12vh;
-    
-    padding: 0 50px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    transition: all .5s ease-in;
+    transition: all .4s;
 }
 
-#project-navigation {
-    width: 100%;
+#secondary-project-navigation, #primary-project-navigation {
+    margin: 0 auto;
 
+    padding: 18px 15px;
+    max-width: 1440px;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+#secondary-project-navigation .icon-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#secondary-project-navigation-links, #main-project-navigation {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#secondary-project-navigation-links {
+    gap: 15px;
 }
 
 #main-project-navigation {
-    width: 80%;
-
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    gap: 70px;
+    gap: 45px;
 }
 
-#project-navigation #root-link svg path{
-    fill: var(--primary-dark);
-}
-
-#theme-switcher-img {
-    width: 25px;
-}
-
-.header-scrolled {
-    background-color: var(--secondary-dark);
+@media screen and (max-width: 950px){
+    #secondary-project-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    #primary-project-navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }

@@ -1,5 +1,7 @@
 <?php
 session_start();
+
+$username = $_SESSION["s_username"];
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +12,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/dark-mode/main.css" type="text/css">
+    <link rel="stylesheet" href="./styles/main.css">
 
     <title>L U B I K U</title>
 </head>
@@ -20,23 +22,9 @@ session_start();
     include_once("./header.php")
         ?>
 
-    <?php
-    // include_once("./welcome.php")
-    ?>
-
-
-
-    <section id="whoami" style="height: 500vh;">
-
+    <section id="new-user">
+        <h2>Account succesfully created for user <?php $username ?></h2>
     </section>
-
-    <section id="services">
-
-    </section>
-
-    <footer>
-
-    </footer>
 
     <script src="./scripts/on_scroll_nav.js"></script>
 </body>

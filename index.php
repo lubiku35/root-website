@@ -21,12 +21,12 @@ session_start();
         ?>
 
     <?php
-    // include_once("./welcome.php")
-    ?>
+    include_once("./welcome.php")
+        ?>
 
 
 
-    <section id="whoami" style="height: 500vh;">
+    <!-- <section id="whoami" style="height: 500vh;">
 
     </section>
 
@@ -36,7 +36,7 @@ session_start();
 
     <footer>
 
-    </footer>
+    </footer> -->
 
     <script src="./scripts/on_scroll_nav.js"></script>
 </body>

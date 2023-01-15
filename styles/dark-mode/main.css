@@ -9,6 +9,7 @@
 
 /* ===== SECTIONS CASCADING STYLE SHEETS ===== */
 @import url(../header.css);
+@import url(../welcome.css);
 
 :root {
     /* === PROJECT COLORS === */
@@ -132,7 +133,7 @@ path {
 
 .underline-effect {
     letter-spacing: .07em;
-    
+
     padding-bottom: 1px;
     background-image: linear-gradient(var(--secondary-color) 0 0);
     background-position: 0 100%; /*OR bottom left*/
@@ -168,6 +169,7 @@ path {
 
 #root-link {
     font-size: var(--middle-size);
+    font-weight: 500;
 }
 
 #root-link span {

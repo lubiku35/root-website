@@ -1,4 +1,65 @@
 #welcome {
+    margin: 0 auto;
+    height: 100vh;
+    
+    max-width: 1440px;
+}
+
+#welcome .heading-wrapper {
+    padding-bottom: 35px;
+    height: 60vh;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#welcome .project-welcome-footer {
+    padding-bottom: 55px;
+    height: 40vh;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#welcome .project-welcome-footer a {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+#welcome .project-welcome-footer  #project-welcome-footer-year {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#welcome .project-welcome-footer  #project-welcome-footer-version {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#project-heading {
+    padding-bottom: 15px;
+    text-align: center;
+
+    letter-spacing: .3em;
+    margin-left: .3em;
+}
+
+#project-description-heading {
+    font-weight: 400;
+
+    
+    letter-spacing: .1em;
+    margin-left: .1em;
+}
+
+/* #welcome {
 
     height: 100vh;
     width: 100vw;
@@ -47,4 +108,4 @@
 
 #welcome .project-welcome-footer a svg path {
     stroke: var(--primary-dark);
-}
+} */

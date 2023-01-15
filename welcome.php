@@ -3,13 +3,13 @@ $current_year = date("Y");
 $current_version = "v1.5";
 ?>
 
-<section id="welcome" class="full-height">
+<section id="welcome">
     <div class="heading-wrapper">
         <h1 id="project-heading">luboslav motosicky</h1>
         <h3 id="project-description-heading">studio | portfolio | branding</h3>
     </div>
     <div class="project-welcome-footer">
-        <p>
+        <p id="project-welcome-footer-version">
             <?php echo $current_version ?>
         </p>
         <a href="">
@@ -24,7 +24,7 @@ $current_version = "v1.5";
             </svg>
         </a>
 
-        <p>// <?php echo $current_year ?>
+        <p id="project-welcome-footer-year">// <?php echo $current_year ?>
         </p>
     </div>
 </section>

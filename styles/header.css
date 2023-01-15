@@ -44,9 +44,14 @@
         align-items: flex-start;
         gap: 15px;
     }
+    
     #primary-project-navigation {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
+    }
+
+    #main-project-navigation {
+        gap: 35px;
     }
 }

@@ -23,6 +23,7 @@ session_start();
 
     <section id="login">
         <h2>log in</h2>
+
         <form action="" method="post" id="log-form">
             <label for="username"></label>
             <input type="text" name="username" placeholder="USERNAME / EMAIL" value="" id="log-username">
@@ -32,7 +33,6 @@ session_start();
 
             <p class="reg-client-error-message" id="client-error-login"></p>
             <?php
-
             ?>
 
             <button type="submit">log in</button>

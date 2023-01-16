@@ -9,26 +9,82 @@
 }
 
 #login h2 {
-    height: 12vh;
-    font-size: 2.5em;
+    margin-bottom: 50px;
+
+    letter-spacing: .2em;
+    margin-right: .2em;
 }
 
-#login form {
-    width: 26%;
+#log-form {
+
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-} 
+    flex-direction: column;
 
-#login form input {
+    width: 50%;
+}
+
+#log-form #client-error-login {
+    margin-bottom: 15px;
+}
+
+
+#log-form input {
+    width: 50%;
+    margin-bottom: 55px;
+}
+
+#log-form button {
+    width: 16%;
     margin-bottom: 35px;
 }
 
-#login form button {
-    margin-bottom: 25px;
+@media screen and (max-width: 1200px){
+    #log-form {
+        width: 70%;
+    }
+    
+    #log-form button {
+        width: 18%;
+    }
 }
 
-#dont-have-an-acc {
-    font-size: .9em;
+@media screen and (max-width: 940px){
+    #log-form {
+        width: 100%;
+    }
+    
+    #log-form #client-error-login {
+        margin-bottom: 15px;
+    }
+    
+    
+    #log-form input {
+        width: 50%;
+        margin-bottom: 55px;
+    }
+    
+    #log-form button {
+        width: 18%;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    #log-form {
+        width: 100%;
+    }
+
+    #login h2 {
+        margin-top: 100px;
+    }
+
+    #log-form input {
+        width: 70%;
+    }
+    
+    #log-form button {
+        width: 28%;
+    }
 }

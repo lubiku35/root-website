@@ -10,7 +10,7 @@ let valid_log_username = false;
 let valid_log_password = false;
 
 // login error message
-let login_error_message = "Username or password not valid";
+let login_error_message = "Incorrect username or password";
 
 log_form.addEventListener('submit', e => {
     checkUserInputs();

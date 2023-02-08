@@ -1,5 +1,6 @@
 
 /* LINKED CSS */
+@import url(./header.css);
 
 * {
     padding: 0;
@@ -10,11 +11,13 @@
 html {
     overflow-x: hidden;
     color: var(--primary-color);
+    font-family: var(--rajdhani-font);
     text-transform: uppercase;        
 }
 
 body {
     background-color: var(--secondary-color);
+    max-width: 100vw;
 }
 
 ul, ol, li {
@@ -29,5 +32,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
+    text-decoration: none;
     color: var(--primary-color);
+}
+
+input[type="submit"] {
+    padding: 8px 5px;
+    margin-left: 25px;
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+    color: var(--primary-color);
+    font-family: var(--rajdhani-font);
+
+    opacity: 1;
+    letter-spacing: .1em;
 }

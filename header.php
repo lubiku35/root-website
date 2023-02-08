@@ -28,14 +28,14 @@ if (!isset($_COOKIE["screen_mode"])) {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="<?php echo $_COOKIE["screen_mode"] ?>_root.css">
+    <link rel="stylesheet" href="./styles/<?php echo $_COOKIE["screen_mode"] ?>_root.css">
     <title>LUBIKU</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
+    <header id="project-header">
+        <nav id="project-navigation">
             <ul>
                 <li><a href="">whoami</a></li>
                 <li><a href="">services</a></li>

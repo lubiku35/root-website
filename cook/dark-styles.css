@@ -1,0 +1,6 @@
+@import url(./allotherstyles.css);
+
+:root {
+    --bg-color: black;
+    --color: white;
+}
